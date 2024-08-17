@@ -6,7 +6,6 @@ import AllProducts from '../Component/AllProduct/AllProducts';
 const Home = () => {
   return (
     <div>
-      <Navbar></Navbar>
       <AddCard></AddCard>
       <AllProducts></AllProducts>
     </div>

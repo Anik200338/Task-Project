@@ -5,16 +5,23 @@ import Register from '../Component/Register/Register';
 import Home from '../Pages/Home';
 import AddCard from '../Component/AddCard/AddCard';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
+import Main from '../Main/Main';
 
 const router = createBrowserRouter([
   {
     path: '/',
     errorElement: <ErrorPage></ErrorPage>,
-    element: (
-      <PrivateRoute>
-        <Home></Home>,
-      </PrivateRoute>
-    ),
+    element: <Main></Main>,
+    children: [
+      {
+        path: '/',
+        element: (
+          <PrivateRoute>
+            <Home></Home>,
+          </PrivateRoute>
+        ),
+      },
+    ],
   },
   {
     path: 'login',
