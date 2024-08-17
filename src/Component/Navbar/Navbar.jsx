@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar h-2 shadow-2xl px-4 fixed  bg-yellow-100   z-10 ">
+      <div className="navbar h-2 shadow-2xl px-4  bg-yellow-100  ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -126,6 +126,16 @@ const Navbar = () => {
                         className="btn btn-sm  btn-ghost text-lg font-semibold"
                       >
                         Logout
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        className="btn"
+                        onClick={() =>
+                          document.getElementById('my_modal_5').showModal()
+                        }
+                      >
+                        open modal
                       </button>
                     </li>
                   </ul>
