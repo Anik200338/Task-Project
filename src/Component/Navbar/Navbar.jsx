@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar h-2 shadow-2xl px-4  bg-yellow-100  ">
+      <div className="navbar h-2 shadow-2xl px-4  bg-green-100  ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -61,7 +61,7 @@ const Navbar = () => {
             className="btn btn-ghost text-lg lg:text-xl  font-extrabold text-yellow-500"
           >
             {' '}
-            Task Harmony
+            ProductVista
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -119,14 +119,8 @@ const Navbar = () => {
                     tabIndex={0}
                     className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-60"
                   >
-                    <li>{user?.displayName || 'user name not found'}</li>
-                    <li>
-                      <button
-                        onClick={logout}
-                        className="btn btn-sm  btn-ghost text-lg font-semibold"
-                      >
-                        Logout
-                      </button>
+                    <li className="font-bold">
+                      {user?.displayName || 'user name not found'}
                     </li>
                     <li>
                       <button
@@ -135,7 +129,15 @@ const Navbar = () => {
                           document.getElementById('my_modal_5').showModal()
                         }
                       >
-                        open modal
+                        Add Product
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        onClick={logout}
+                        className="btn btn-sm  btn-ghost text-lg font-semibold"
+                      >
+                        Logout
                       </button>
                     </li>
                   </ul>
