@@ -54,6 +54,14 @@ const Navbar = () => {
                   Register
                 </button>
               </Link>
+              <button
+                className="btn"
+                onClick={() =>
+                  document.getElementById('my_modal_5').showModal()
+                }
+              >
+                Add Product
+              </button>
             </ul>
           </div>
           <Link

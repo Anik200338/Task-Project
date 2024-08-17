@@ -91,7 +91,7 @@ const AllProducts = () => {
           onChange={e => setSearchInput(e.target.value)} // Update the input field state
           className="input input-bordered w-full max-w-xs mr-2"
         />
-        <button className="btn btn-warning" type="submit">
+        <button className="btn btn-info" type="submit">
           Search
         </button>
         <button
@@ -102,62 +102,144 @@ const AllProducts = () => {
           Reset
         </button>
       </form>
-      <div className="flex mb-4 justify-center">
+      <div className="flex flex-col lg:flex-row mb-4 justify-center gap-5">
         <select
           onChange={handleCategoryChange}
           value={category}
-          className="select select-bordered w-full max-w-xs mr-2"
+          className="select select-bordered w-full max-w-xs mr-2 font-semibold"
         >
-          <option value="">All Categories</option>
+          <option className="font-semibold" value="">
+            All Categories
+          </option>
           {/* Add more categories as needed */}
-          <option value="Mobile Phones">Mobile Phones</option>
-          <option value="Laptops">Laptops</option>
-          <option value="Televisions">Televisions</option>
-          <option value="Headphones">Headphones</option>
-          <option value="Speakers">Speakers</option>
-          <option value="Wearables">Wearables</option>
-          <option value="Cycling Accessories">Cycling Accessories</option>
-          <option value="Computer Accessories">Computer Accessories</option>
-          <option value="Computer Components">Computer Components</option>
-          <option value="Graphics Cards">Graphics Cards</option>
-          <option value="Computer Cases">Computer Cases</option>
-          <option value="Tablets">Tablets</option>
-          <option value="Smart Home">Smart Home</option>
-          <option value="Monitors">Monitors</option>
-          <option value="Cameras">Cameras</option>
-          <option value="Desktop Computers">Desktop Computers</option>
-          <option value="Electric Vehicles">Electric Vehicles</option>
-          <option value="Desktops">Desktops</option>
-          <option value="Cooling">Cooling</option>
-          <option value="Gaming Accessories">Gaming Accessories</option>
+          <option className="font-semibold" value="Mobile Phones">
+            Mobile Phones
+          </option>
+          <option className="font-semibold" value="Laptops">
+            Laptops
+          </option>
+          <option className="font-semibold" value="Televisions">
+            Televisions
+          </option>
+          <option className="font-semibold" value="Headphones">
+            Headphones
+          </option>
+          <option className="font-semibold" value="Speakers">
+            Speakers
+          </option>
+          <option className="font-semibold" value="Wearables">
+            Wearables
+          </option>
+          <option className="font-semibold" value="Cycling Accessories">
+            Cycling Accessories
+          </option>
+          <option className="font-semibold" value="Computer Accessories">
+            Computer Accessories
+          </option>
+          <option className="font-semibold" value="Computer Components">
+            Computer Components
+          </option>
+          <option className="font-semibold" value="Graphics Cards">
+            Graphics Cards
+          </option>
+          <option className="font-semibold" value="Computer Cases">
+            Computer Cases
+          </option>
+          <option className="font-semibold" value="Tablets">
+            Tablets
+          </option>
+          <option className="font-semibold" value="Smart Home">
+            Smart Home
+          </option>
+          <option className="font-semibold" value="Monitors">
+            Monitors
+          </option>
+          <option className="font-semibold" value="Cameras">
+            Cameras
+          </option>
+          <option className="font-semibold" value="Desktop Computers">
+            Desktop Computers
+          </option>
+          <option className="font-semibold" value="Electric Vehicles">
+            Electric Vehicles
+          </option>
+          <option className="font-semibold" value="Desktops">
+            Desktops
+          </option>
+          <option className="font-semibold" value="Cooling">
+            Cooling
+          </option>
+          <option className="font-semibold" value="Gaming Accessories">
+            Gaming Accessories
+          </option>
         </select>
         <select
           onChange={handleBrandChange}
           value={brand}
-          className="select select-bordered w-full max-w-xs mr-2"
+          className="select select-bordered w-full max-w-xs mr-2 font-semibold"
         >
           <option value="">All Brands</option>
           {/* Add more brands as needed */}
-          <option value="Apple">Apple</option>
-          <option value="Samsung">Samsung</option>
-          <option value="Google">Google</option>
-          <option value="Dell">Dell</option>
-          <option value="OnePlus">OnePlus</option>
-          <option value="HP">HP</option>
-          <option value="Xiaomi">Xiaomi</option>
-          <option value="Lenovo">Lenovo</option>
-          <option value="Sony">Sony</option>
-          <option value="Bose">Bose</option>
-          <option value="Garmin">Garmin</option>
-          <option value="JBL">JBL</option>
-          <option value="Jabra">Jabra</option>
-          <option value="Ultimate Ears">Ultimate Ears</option>
-          <option value="Marshall">Marshall</option>
-          <option value="Razer">Razer</option>
-          <option value="Logitech">Logitech</option>
-          <option value="Corsair">Corsair</option>
-          <option value="Asus">Asus</option>
-          <option value="NZXT">NZXT</option>
+          <option className="font-semibold" value="Apple">
+            Apple
+          </option>
+          <option className="font-semibold" value="Samsung">
+            Samsung
+          </option>
+          <option className="font-semibold" value="Google">
+            Google
+          </option>
+          <option className="font-semibold" value="Dell">
+            Dell
+          </option>
+          <option className="font-semibold" value="OnePlus">
+            OnePlus
+          </option>
+          <option className="font-semibold" value="HP">
+            HP
+          </option>
+          <option className="font-semibold" value="Xiaomi">
+            Xiaomi
+          </option>
+          <option className="font-semibold" value="Lenovo">
+            Lenovo
+          </option>
+          <option className="font-semibold" value="Sony">
+            Sony
+          </option>
+          <option className="font-semibold" value="Bose">
+            Bose
+          </option>
+          <option className="font-semibold" value="Garmin">
+            Garmin
+          </option>
+          <option className="font-semibold" value="JBL">
+            JBL
+          </option>
+          <option className="font-semibold" value="Jabra">
+            Jabra
+          </option>
+          <option className="font-semibold" value="Ultimate Ears">
+            Ultimate Ears
+          </option>
+          <option className="font-semibold" value="Marshall">
+            Marshall
+          </option>
+          <option className="font-semibold" value="Razer">
+            Razer
+          </option>
+          <option className="font-semibold" value="Logitech">
+            Logitech
+          </option>
+          <option className="font-semibold" value="Corsair">
+            Corsair
+          </option>
+          <option className="font-semibold" value="Asus">
+            Asus
+          </option>
+          <option className="font-semibold" value="NZXT">
+            NZXT
+          </option>
         </select>
         <input
           type="number"
@@ -178,24 +260,32 @@ const AllProducts = () => {
         <select
           onChange={handleSortChange}
           value={sort}
-          className="select select-bordered w-full max-w-xs"
+          className="select select-bordered w-full max-w-xs font-semibold"
         >
-          <option value="">Sort By</option>
-          <option value="priceAsc">Price: Low to High</option>
-          <option value="priceDesc">Price: High to Low</option>
-          <option value="dateDesc">Date Added: Newest First</option>
+          <option className="font-semibold" value="">
+            Sort By
+          </option>
+          <option className="font-semibold" value="priceAsc">
+            Price: Low to High
+          </option>
+          <option className="font-semibold" value="priceDesc">
+            Price: High to Low
+          </option>
+          <option className="font-semibold" value="dateDesc">
+            Date Added: Newest First
+          </option>
         </select>
       </div>
       {loading ? (
         <div>Loading...</div>
       ) : (
         <div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
             {products.map(product => (
               <ProductCard key={product._id} product={product} />
             ))}
           </div>
-          <div className="flex justify-center mt-4">
+          <div className="flex justify-center mt-4 overflow-auto">
             <button
               onClick={() => handlePageChange(page - 1)}
               disabled={page === 1}
