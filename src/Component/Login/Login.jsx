@@ -37,7 +37,8 @@ const Login = () => {
       <div className="hero min-h-screen bg-[url('https://i.ibb.co/wzLs0gK/data-security-threat.png')] rounded-3xl  w-full mb-20">
         <div className="hero-content flex-col lg:flex rounded-2xl w-3/4">
           <div className="text-center lg:text-left">
-            <h1 className="text-5xl font-bold">Login now!</h1>
+            <h1 className="text-3xl font-bold">Welcome to ProductVista</h1>
+            <h1 className="text-5xl font-bold text-center"> Login now!</h1>
           </div>
           <div
             className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100"

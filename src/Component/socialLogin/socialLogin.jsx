@@ -37,12 +37,6 @@ const SocialLogin = () => {
         >
           <FaGoogle />{' '}
         </button>
-        <button
-          onClick={() => handleSocialLogin(githubLogin)}
-          className="btn btn-accent  btn-outline rounded-full text-lg"
-        >
-          <FaGithub />{' '}
-        </button>
       </div>
     </>
   );
